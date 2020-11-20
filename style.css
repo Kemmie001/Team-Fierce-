@@ -4,9 +4,14 @@
     --secondary: #F7931E;
     --tertiary: rgba(3, 76, 129, 0.8);
 }
+@font-face{
+    font-family: futura;
+    src: url("Gill Sans MT Light.ttf");
+}
 *{
     margin: 0;
     padding: 0;
+    font-family: futura;
 }
 .nav-link{
     color: var(--primary);
@@ -61,28 +66,35 @@ h3{
 }
 header{
     position: relative;
+    background-color: #ffffff;
 }
 .wave{
-    margin-top: -10%;
+    margin-top: -20%;
 }
-.card{
-    width: 5rem;
-    box-shadow: black 0.2px 1px 3px 0.5px;
+.carousel-item{
     color: var(--primary);
+    
+}
+.card-body{
+    background-color: #ffff;
+    margin: auto;
+    border-radius: 1rem;
+    width: 50%;
 }
 .text-center img{
-    width: 60%;
+    width: 20%;
     border-radius: 50%;
 }
 .fa-bars{
-    color:rgb(53, 86, 197) ;
+    color:var(--primary) ;
 }
 
 button:focus{
     outline: rgb(149, 124, 124);
 }
 .download{
-    background: #ffffff;
+    position: relative;
+    background-color: #ffffff;
     padding: 0.5rem;
     font-weight: 700;
     margin-left: 1rem;
@@ -99,11 +111,7 @@ button:focus{
     .navbar-collapse{
         text-align: center;
         font-size: 1rem;
-        background-color: rgba(172, 185, 211, 0.9);
+        background-color: rgb(172, 185, 211);
     }
-    .card{
-        width: 10rem;
-        margin-left: 1rem;
-        margin-bottom: 1rem;
-    }
+    
 }
