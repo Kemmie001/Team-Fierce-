@@ -1,55 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-md fixed-top bg">
-        <a class="navbar-brand h1 nav-link" href="#"><svg width="62" height="30" viewBox="0 0 62 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M30.915 7.45605C30.6462 7.4196 30.4092 7.40137 30.2041 7.40137C29.4567 7.40137 28.9668 7.6543 28.7344 8.16016V13H26.7588V5.60352H28.625L28.6797 6.48535C29.0762 5.80632 29.6253 5.4668 30.3271 5.4668C30.5459 5.4668 30.751 5.49642 30.9424 5.55566L30.915 7.45605ZM35.1396 13.1367C34.055 13.1367 33.1709 12.804 32.4873 12.1387C31.8083 11.4733 31.4688 10.5869 31.4688 9.47949V9.28809C31.4688 8.54525 31.6123 7.88216 31.8994 7.29883C32.1865 6.71094 32.5921 6.25977 33.1162 5.94531C33.6449 5.6263 34.2464 5.4668 34.9209 5.4668C35.9326 5.4668 36.7279 5.78581 37.3066 6.42383C37.89 7.06185 38.1816 7.96647 38.1816 9.1377V9.94434H33.4717C33.5355 10.4274 33.7269 10.8148 34.0459 11.1064C34.3695 11.3981 34.7773 11.5439 35.2695 11.5439C36.0306 11.5439 36.6253 11.2682 37.0537 10.7168L38.0244 11.8037C37.7282 12.223 37.3271 12.5511 36.8213 12.7881C36.3154 13.0205 35.7549 13.1367 35.1396 13.1367ZM34.9141 7.06641C34.5221 7.06641 34.2031 7.19857 33.957 7.46289C33.7155 7.72721 33.5605 8.10547 33.4922 8.59766H36.2402V8.44043C36.2311 8.00293 36.1126 7.66569 35.8848 7.42871C35.6569 7.18717 35.3333 7.06641 34.9141 7.06641ZM43.5957 13C43.5046 12.8223 43.4385 12.6012 43.3975 12.3369C42.9189 12.8701 42.2969 13.1367 41.5312 13.1367C40.8066 13.1367 40.2051 12.9271 39.7266 12.5078C39.2526 12.0885 39.0156 11.5599 39.0156 10.9219C39.0156 10.138 39.305 9.53646 39.8838 9.11719C40.4671 8.69792 41.3079 8.486 42.4062 8.48145H43.3154V8.05762C43.3154 7.71582 43.2266 7.44238 43.0488 7.2373C42.8757 7.03223 42.5999 6.92969 42.2217 6.92969C41.889 6.92969 41.627 7.00944 41.4355 7.16895C41.2487 7.32845 41.1553 7.5472 41.1553 7.8252H39.1797C39.1797 7.39681 39.3118 7.00033 39.5762 6.63574C39.8405 6.27116 40.2142 5.98633 40.6973 5.78125C41.1803 5.57161 41.7227 5.4668 42.3242 5.4668C43.2357 5.4668 43.958 5.69694 44.4912 6.15723C45.029 6.61296 45.2979 7.25553 45.2979 8.08496V11.291C45.3024 11.9928 45.4004 12.5238 45.5918 12.8838V13H43.5957ZM41.9619 11.626C42.2536 11.626 42.5225 11.5622 42.7686 11.4346C43.0146 11.3024 43.1969 11.127 43.3154 10.9082V9.63672H42.5771C41.5882 9.63672 41.0618 9.97852 40.998 10.6621L40.9912 10.7783C40.9912 11.0244 41.0778 11.2272 41.251 11.3867C41.4242 11.5462 41.6611 11.626 41.9619 11.626Z" fill="white"/>
-            <path d="M20.8887 27V17.0469H23.9512C24.8262 17.0469 25.6077 17.2451 26.2959 17.6416C26.9886 18.0335 27.5286 18.5941 27.916 19.3232C28.3034 20.0479 28.4971 20.8727 28.4971 21.7979V22.2559C28.4971 23.181 28.3057 24.0036 27.9229 24.7236C27.5446 25.4437 27.0091 26.002 26.3164 26.3984C25.6237 26.7949 24.8421 26.9954 23.9717 27H20.8887ZM22.9395 18.708V25.3525H23.9307C24.7327 25.3525 25.3457 25.0905 25.7695 24.5664C26.1934 24.0423 26.4098 23.2926 26.4189 22.3174V21.791C26.4189 20.7793 26.2093 20.0137 25.79 19.4941C25.3708 18.9701 24.7578 18.708 23.9512 18.708H22.9395ZM29.5566 23.2334C29.5566 22.4997 29.6979 21.8457 29.9805 21.2715C30.263 20.6973 30.6686 20.2529 31.1973 19.9385C31.7305 19.624 32.348 19.4668 33.0498 19.4668C34.0479 19.4668 34.8613 19.7721 35.4902 20.3828C36.1237 20.9935 36.4769 21.8229 36.5498 22.8711L36.5635 23.377C36.5635 24.5117 36.2467 25.4232 35.6133 26.1113C34.9798 26.7949 34.1299 27.1367 33.0635 27.1367C31.9971 27.1367 31.1449 26.7949 30.5068 26.1113C29.8734 25.4277 29.5566 24.498 29.5566 23.3223V23.2334ZM31.5322 23.377C31.5322 24.0788 31.6644 24.6165 31.9287 24.9902C32.193 25.3594 32.5713 25.5439 33.0635 25.5439C33.542 25.5439 33.9157 25.3617 34.1846 24.9971C34.4535 24.6279 34.5879 24.04 34.5879 23.2334C34.5879 22.5452 34.4535 22.012 34.1846 21.6338C33.9157 21.2555 33.5374 21.0664 33.0498 21.0664C32.5667 21.0664 32.193 21.2555 31.9287 21.6338C31.6644 22.0075 31.5322 22.5885 31.5322 23.377ZM40.8564 25.5439C41.221 25.5439 41.5173 25.4437 41.7451 25.2432C41.973 25.0426 42.0915 24.776 42.1006 24.4434H43.9531C43.9486 24.9447 43.8118 25.4049 43.543 25.8242C43.2741 26.2389 42.9049 26.5625 42.4355 26.7949C41.9707 27.0228 41.4557 27.1367 40.8906 27.1367C39.8333 27.1367 38.9993 26.8018 38.3887 26.1318C37.778 25.4574 37.4727 24.5277 37.4727 23.3428V23.2129C37.4727 22.0736 37.7757 21.1644 38.3818 20.4854C38.988 19.8063 39.8197 19.4668 40.877 19.4668C41.8021 19.4668 42.5426 19.7311 43.0986 20.2598C43.6592 20.7839 43.944 21.4834 43.9531 22.3584H42.1006C42.0915 21.9756 41.973 21.6657 41.7451 21.4287C41.5173 21.1872 41.2165 21.0664 40.8428 21.0664C40.3825 21.0664 40.0339 21.235 39.7969 21.5723C39.5645 21.9049 39.4482 22.4473 39.4482 23.1992V23.4043C39.4482 24.1654 39.5645 24.7122 39.7969 25.0449C40.0293 25.3776 40.3825 25.5439 40.8564 25.5439ZM47.4463 17.7852V19.6035H48.7109V21.0527H47.4463V24.7441C47.4463 25.0176 47.4987 25.2135 47.6035 25.332C47.7083 25.4505 47.9089 25.5098 48.2051 25.5098C48.4238 25.5098 48.6175 25.4938 48.7861 25.4619V26.959C48.3988 27.0775 48 27.1367 47.5898 27.1367C46.2044 27.1367 45.498 26.4372 45.4707 25.0381V21.0527H44.3906V19.6035H45.4707V17.7852H47.4463ZM49.2988 23.2334C49.2988 22.4997 49.4401 21.8457 49.7227 21.2715C50.0052 20.6973 50.4108 20.2529 50.9395 19.9385C51.4727 19.624 52.0902 19.4668 52.792 19.4668C53.79 19.4668 54.6035 19.7721 55.2324 20.3828C55.8659 20.9935 56.2191 21.8229 56.292 22.8711L56.3057 23.377C56.3057 24.5117 55.9889 25.4232 55.3555 26.1113C54.722 26.7949 53.8721 27.1367 52.8057 27.1367C51.7393 27.1367 50.887 26.7949 50.249 26.1113C49.6156 25.4277 49.2988 24.498 49.2988 23.3223V23.2334ZM51.2744 23.377C51.2744 24.0788 51.4066 24.6165 51.6709 24.9902C51.9352 25.3594 52.3135 25.5439 52.8057 25.5439C53.2842 25.5439 53.6579 25.3617 53.9268 24.9971C54.1956 24.6279 54.3301 24.04 54.3301 23.2334C54.3301 22.5452 54.1956 22.012 53.9268 21.6338C53.6579 21.2555 53.2796 21.0664 52.792 21.0664C52.3089 21.0664 51.9352 21.2555 51.6709 21.6338C51.4066 22.0075 51.2744 22.5885 51.2744 23.377ZM61.6787 21.4561C61.4098 21.4196 61.1729 21.4014 60.9678 21.4014C60.2204 21.4014 59.7305 21.6543 59.498 22.1602V27H57.5225V19.6035H59.3887L59.4434 20.4854C59.8398 19.8063 60.389 19.4668 61.0908 19.4668C61.3096 19.4668 61.5146 19.4964 61.7061 19.5557L61.6787 21.4561Z" fill="#034C81"/>
-            <path d="M2 14H8L12.5 26L18.5 2L23 14H29" stroke="white" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>            
-            </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars navbar-toggler-icon"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav navbar-color ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link home" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Review</a>
-            </li>
-            <li class="nav-item">
-                <button class="my-2 my-0" type="submit"><a href="login.html" class="text-white">Login</a></button>
-            </li>
-            <li class="nav-item">
-                <button class="my-2 my-0" type="submit"><a href="signup.html" class="text-white">Sign Up</a></button>
-            </li>
-          </ul>
+<template>
+    <div class="section">
+    <HelloWorld class="fixed w-full"/>
+    <header class="pt-9">
+        <div class="container pt-9 mx-auto px-4">
+        <div class="grid grid-cols-2 justify-center">
+            <div class=" text-left px-5 self-center justify-self-center">
+                <h3 class="text-xl md:text-2xl text-blue-900">Let's Connect You To The Perfect Medical Practioner Online.</h3>
+                <p class="md:text-xl text-black-300">We connect healthcare professionals to patients for healthy life.</p>
         </div>
-      </nav>
-      <header class="pt-5 mt-2">
-       <div class="container">
-            <div class="row">
-                    <div class="col-6 align-self-center">
-                        <h3 class="">Let's Connect You To The Perfect Medical Practioner Online</h3>
-                        <p>We connect healthcare professionals to patients for healthy life.</p>
-                    </div>
-                    <div class="col-6">
+        <div class="col-6">
         <svg width="100%" height="100%" viewBox="0 0 820 672" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0)">
         <path opacity="0.1" d="M272.616 671.622C312.549 671.622 344.922 665.607 344.922 658.186C344.922 650.766 312.549 644.75 272.616 644.75C232.683 644.75 200.31 650.766 200.31 658.186C200.31 665.607 232.683 671.622 272.616 671.622Z" fill="#034C81"/>
@@ -235,18 +194,17 @@
         </clipPath>
         </defs>
         </svg>
-            </div>
         </div>
-       </div>
+        </div>
+        </div>
        <svg class="wave" width="100%" height="" viewBox="0 0 1440 360" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M-58 360L-39.0375 312C-18.8108 264 20.3783 168 58.3033 156C97.4925 144 136.682 216 175.871 222C213.796 228 252.985 168 292.174 180C331.363 192 369.288 276 408.478 294C447.667 312 486.856 264 526.045 258C563.97 252 603.159 288 642.348 252C681.538 216 719.463 108 758.652 60C797.841 12 837.03 24 874.955 60C914.144 96 953.333 156 992.523 162C1031.71 168 1069.64 120 1108.83 120C1148.02 120 1187.2 168 1225.13 204C1264.32 240 1303.51 264 1342.7 228C1380.62 192 1419.81 96 1440.04 48L1459 0V360H1440.04C1419.81 360 1380.62 360 1342.7 360C1303.51 360 1264.32 360 1225.13 360C1187.2 360 1148.02 360 1108.83 360C1069.64 360 1031.71 360 992.523 360C953.333 360 914.144 360 874.955 360C837.03 360 797.841 360 758.652 360C719.463 360 681.538 360 642.348 360C603.159 360 563.97 360 526.045 360C486.856 360 447.667 360 408.478 360C369.288 360 331.363 360 292.174 360C252.985 360 213.796 360 175.871 360C136.682 360 97.4925 360 58.3033 360C20.3783 360 -18.8108 360 -39.0375 360H-58Z" fill="#034C81"/>
         </svg>
-        
       </header>
-          <section class="bg-gray">
-               <article class="container">
-                    <div class="row">
-                            <div class="col-6 align-self-center">
+       <section class="bg">
+               <article class="container mx-auto">
+                    <div class="grid grid-cols-2 justify-content-center py-2 gap-4">
+                            <div class="self-center">
                                     <svg width="100%" height="" viewBox="0 0 526 401" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect width="526" height="401" fill="url(#pattern0)"/>
                                         <defs>
@@ -257,25 +215,25 @@
                                         </defs>
                                         </svg>                                                                        
                             </div>
-                            <div class="col-6 pt-3 align-self-center">
-                                <h3>A perfect medical App with the perfect medical Team</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis dolor ut eaque non ratione officia error saepe accusantium nesciunt velit doloremque facilis voluptates fuga explicabo repellendus, adipisci suscipit in?</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vero rerum error reiciendis id quidem optio et numquam voluptatem, facere quo quia provident non fugit dolore dolorem aliquid eaque sapiente.
+                            <div class="text-left py-4 self-center">
+                                <h3 class="md:text-2xl py-2 text-blue-900">A perfect medical App with the perfect medical Team</h3>
+                                <p class="text-xs md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis dolor ut eaque non ratione officia error saepe accusantium nesciunt velit doloremque facilis voluptates fuga explicabo repellendus, adipisci suscipit in?</p><br>
+                                <p class="text-xs md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vero rerum error reiciendis id quidem optio et numquam voluptatem, facere quo quia provident non fugit dolore dolorem aliquid eaque sapiente.
                                 </p>
                             </div>
                           </div>
                </article>
           </section>
-          <section class="container mt-4">
-                <div class="row pt-md-3 pb-md-5">
-                        <div class="col-4 align-self-center">
-                          <div class="features yellow ml-4 ml-md-5">
+          <section class="container mx-auto mt-4 py-4">
+                <div class="grid grid-cols-3 justify-center py-3 pb-md-5">
+                        <div class="text-blue-900 pt-4 justify-self-center">
+                          <div class="featurs shadow-lg bg-gray-100 p-4 my-4 md:mx-5 rounded">
                               Consultations
                           </div>
-                          <div class="features mr-3 mr-md-5 gray">
+                          <div class="featurs shadow-lg bg-gray-100 p-4 mr-7 rounded">
                                 Save Your Health
                           </div>
-                            <div class="features ml-3 ml-md-5 text-center blue">
+                            <div class="featurs shadow-lg bg-gray-100 p-4 rounded md:mx-5 my-4">
                                     24 Hours Online Treatment
                             </div>
                         </div>
@@ -320,73 +278,156 @@
                                     <path opacity="0.15" d="M416.753 160.634L425.801 190.811L416.753 221.419L421.923 190.811L416.753 160.634Z" fill="black"/>
                                     </svg>                                    
                         </div>
-                        <div class="col-4 align-self-center">
-                        <div class="features mr-3 mr-md-5 blue">
+                        <div class="text-blue-900 pt-4 justify-self-center">
+                        <div class="featurs shadow-lg bg-gray-100 p-4 rounded my-4 ">
                             Health Check
                         </div>
-                        <div class="features ml-3 ml-md-5 gray">
+                        <div class="featurs shadow-lg bg-gray-100 p-4 rounded ml-4">
                             Easy To Use
                         </div>
-                        <div class="features mr-3 mr-md-5 yellow">
+                        <div class="featurs shadow-lg bg-gray-100 p-4 rounded my-4">
                             Save Your Money
                         </div>
                         </div>
                       </div>
+                      <!-- <img src=""> -->
           </section>
-           <section class="bg-gray pt-2">
-               <div class="container">
-            <div class="text-center">
-                    <h3>User's Review</h3>
-                <p>Lorem ipsum dolor sit amet consecteius repellat praesentium magni id sit libero quas</p>
+          <section class="bg pt-4">
+               <div class="container mx-auto">
+            <div class="">
+                <h3 class="text-2xl text-blue-900 font-bold">User's Review</h3>
+                <p class="text-lg py-3">Lorem ipsum dolor sit amet consecteius repellat praesentium magni id sit libero quas</p>
+                
             </div>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                        <div class="card-body">
+            
+                <div class="section-3 my-5">
+                  <div class="justify-self-center m-4 shadow-lg card-body bg-white rounded-lg active ">
+                        <div class="">
                               <div class="text-center">
-                                  <img src="an-african-american-student.png" alt="">
-                                  <h6 class="pt-3 card-subtitle mb-2">Bolade Ayoade</h6>
+                                  <img class="w-24 py-3 rounded-full mx-auto" src="../assets/images/an-african-american-student.png" alt="">
+                                  <h6 class="py-3 text-lg card-subtitle mb-2">Bolade Ayoade</h6>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               </div>
                              
                               
                         </div>                            
                   </div>
-                  <div class="carousel-item">
-                        <div class="card-body">
+                  <div class="card-body bg-white m-4 justify-self-center  rounded-lg">
+                        <div class="">
                                 <div class="text-center">
-                                        <img src="images (2).jfif" alt="">
+                                        <img class="w-24 py-3 rounded-full mx-auto" src="../assets/images/girl.png" alt="">
                                         <h6 class="pt-3 card-subtitle mb-2">Gbemisola Adesina</h6>
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>
                           
                         </div>
                   </div>
-                  <div class="carousel-item">
-                        <div class="card-body">
+                  <div class="bg-white m-4 card-body justify-self-center  rounded-lg">
+                        <div class="">
                                     <div class="text-center">
-                                            <img src="images (1).jfif" alt="">
+                                            <img class="w-24 py-3 rounded-full mx-auto" src="../assets/images/girl2.png" alt="">
                                             <h6 class="pt-3 card-subtitle mb-2">Ngozi Eze</h6>
                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                     </div>
                               
                         </div>
                   </div>
-                </div>
-            </div>
+                </div> 
                </div>
-                <div class="text-center pt-3">
-                        <button class="download"><i class="fab fa-google-play"></i> Download on <br> app on Play Store</button>
-                        <button class="download"><i class="fab fa-apple"></i> Download on app <br> on Apple Store</button>
+                <div class="text-center pt-3 relative">
+                        <button class="bg-white p-3 rounded mx-3"><i class="fab fa-google-play"></i> Download on <br> app on Play Store</button>
+                        <button class="bg-white p-3 rounded-lg mx-3"><i class="fab fa-apple"></i> Download on app <br> on Apple Store</button>
                 </div>
                 <svg class="wave" width="100%" height="20%" viewBox="0 0 1440 360" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M-58 360L-39.0375 312C-18.8108 264 20.3783 168 58.3033 156C97.4925 144 136.682 216 175.871 222C213.796 228 252.985 168 292.174 180C331.363 192 369.288 276 408.478 294C447.667 312 486.856 264 526.045 258C563.97 252 603.159 288 642.348 252C681.538 216 719.463 108 758.652 60C797.841 12 837.03 24 874.955 60C914.144 96 953.333 156 992.523 162C1031.71 168 1069.64 120 1108.83 120C1148.02 120 1187.2 168 1225.13 204C1264.32 240 1303.51 264 1342.7 228C1380.62 192 1419.81 96 1440.04 48L1459 0V360H1440.04C1419.81 360 1380.62 360 1342.7 360C1303.51 360 1264.32 360 1225.13 360C1187.2 360 1148.02 360 1108.83 360C1069.64 360 1031.71 360 992.523 360C953.333 360 914.144 360 874.955 360C837.03 360 797.841 360 758.652 360C719.463 360 681.538 360 642.348 360C603.159 360 563.97 360 526.045 360C486.856 360 447.667 360 408.478 360C369.288 360 331.363 360 292.174 360C252.985 360 213.796 360 175.871 360C136.682 360 97.4925 360 58.3033 360C20.3783 360 -18.8108 360 -39.0375 360H-58Z" fill="#034C81"/>
                     </svg>                    
            </section>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script> 
-<!-- Bootstrap Cdn -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-</body>
-</html>
+           
+    </div>
+</template>
+
+<script>
+import HelloWorld from '../components/HelloWorld'
+export default {
+  name: 'section',
+  components: {
+     HelloWorld
+  },
+  props: {
+    msg: String,
+  
+  },
+ 
+  data() {
+    return {
+      showMenu: false,
+      
+    }
+     
+  },
+
+  methods: {
+    toggleNavbar: function(){
+      this.showMenu = !this.showMenu;
+    },
+}
+}
+</script>
+
+// <!-- Add "scoped" attribute to limit CSS to this component only -->
+<style>
+.helloWorld{
+    position: fixed;
+}
+.wave{
+    margin-top: -10%;
+}
+.bg{
+    background-color: rgba(172, 185, 211, 0.2);
+}
+.section-3{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns:1fr 1fr 1fr;
+    overflow-x:scroll;
+    cursor:pointer;
+    scrollbar-width: thin;
+   -ms-overflow-style: thin; 
+   scrollbar-color:rgba(172, 185, 211, 0.2) transparent;
+}
+.section-3::-webkit-scrollbar{
+    width: 10px;
+}
+.section-3::-webkit-scrollbar-track{
+    background: transparent;
+   
+}
+.section-3::-webkit-scrollbar-thumb{
+    background:rgba(172, 185, 211, 0.2);
+    border-radius: 6rem;
+    width: 2px;
+}
+.card-body{
+    position: relative;
+    min-width: 300px;
+}
+@media screen and (min-width: 768px) {
+    .wave{
+    margin-top: -20%;
+}
+svg{
+    height: 85%;
+}
+.featurs{
+    width: 15rem;
+}
+.card-body{
+    width: 18rem;
+}
+}
+@media screen and (min-width:1025px) {
+    .section-3{
+    justify-content: center;
+}
+}
+</style>
