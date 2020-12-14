@@ -1,6 +1,6 @@
 <template>
     <div class="section">
-    <!-- <HelloWorld class="fixed w-full"/> -->
+    <HelloWorld class="fixed w-full"/>
     <header class="pt-9">
         <div class="container pt-9 mx-auto px-4">
         <div class="grid grid-cols-2 justify-center">
@@ -351,11 +351,11 @@
 </template>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script>
-// import HelloWorld from '../components/HelloWorld'
+import HelloWorld from '../components/HelloWorld'
 export default {
   name: 'section',
   components: {
-    //  HelloWorld
+     HelloWorld
   },
   props: {
     msg: String,

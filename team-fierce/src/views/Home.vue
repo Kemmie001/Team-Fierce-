@@ -8,7 +8,7 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-import Section from '@/components/Section.vue'
+import Section from '@/components/section.vue'
 
 export default {
   name: 'Home',
@@ -18,3 +18,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.home{
+  background-color: black;
+}
+</style>

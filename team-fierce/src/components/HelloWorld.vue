@@ -27,9 +27,9 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <a class="px-4 py-2 flex items-center text-sm uppercase font-bold leading-snug hover:opacity-75" href="#pablo">
+            <router-link to="/section" class="px-4 py-2 flex items-center text-sm uppercase font-bold leading-snug hover:opacity-75" href="#pablo">
               ABOUT
-            </a>
+            </router-link>
           </li>
           <li class="nav-item">
             <a class="px-4 py-2 flex items-center text-sm uppercase font-bold leading-snug hover:opacity-75" href="#pablo">

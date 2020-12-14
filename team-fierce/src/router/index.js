@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HelloWorld from '../components/HelloWorld'
 import Login from '../components/login'
 import Signup from '../components/signup'
 import Section from '../components/section'
@@ -10,8 +9,13 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'HelloWorld',
-    component: HelloWorld
+    name: 'Section',
+    component: Section
+  },
+  {
+    path: '/section',
+    name: 'Section',
+    component: Section
   },
   {
     path: '/login',
@@ -23,11 +27,7 @@ const routes = [
     name: 'Signup',
     component: Signup
   },
-  {
-    path: '/section',
-    name: 'Section',
-    component: Section
-  },
+  
   // {
   //   // route level code-splitting
   //   // this generates a separate chunk (about.[hash].js) for this route
