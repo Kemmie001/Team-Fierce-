@@ -1,9 +1,7 @@
 <template>
-  <div class="hello">
-<!-- This example requires Tailwind CSS v2.0+ -->
-<!-- <Dashboard/> -->
-  <nav class="fixed-top flex flex-wrap items-center justify-between px-2 py-1 navbar-expand-lg bg mb-3">
-    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+  <div>
+<nav class="fixed-top flex flex-wrap items-center justify-between px-2 py-1 navbar-expand-lg bg mb-3">
+    <div class="container px-4 mx-auto flex  items-center justify-between">
       <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
         <a class="text-sm font-bold leading-relaxed inline-block mx-3 py-2" href="#pablo">
           <svg class="" width="62" height="30" viewBox="0 0 62 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -12,78 +10,32 @@
             <path d="M2 14H8L12.5 26L18.5 2L23 14H29" stroke="white" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </a>
-        <button class="text-blue-900 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" v-on:click="toggleNavbar()">
-          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-        
       </div>
-      <div v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="lg:flex lg:flex-grow items-center">
-        <ul class="flex flex-col lg:flex-row list-none ml-auto">
-          <li class="nav-item">
-            <router-link to="/section" class="px-4 py-2 flex items-center text-sm uppercase font-bold leading-snug hover:opacity-75" href="#pablo">
-               HOME
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <a class="px-4 py-2 flex items-center text-sm uppercase font-bold leading-snug hover:opacity-75" href="#pablo">
-              ABOUT
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="px-4 py-2 flex items-center text-sm uppercase font-bold leading-snug hover:opacity-75" href="#pablo">
-              BLOG
-            </a>
-          </li>
-          <li class="nav-item"> 
-            <button class="mx-2 bg-blue-900 rounded p-1" type="submit">
-              <router-link to="/signup" class="text-white">Sign Up</router-link>
-            </button>  
-          </li><br>
-          <li class="nav-item">
-            <button class="mx-2 bg-blue-900 rounded p-1" type="submit">
-              <router-link to="/login" class="text-white">Login In</router-link>
+            <div>
+              <button class="mx-2 bg-blue-900 w-full rounded p-1" type="submit">
+              <a class="text-white">Log Out</a>
             </button>
-          </li>
-        </ul>
-      </div>
+            </div>
     </div>
   </nav>
-  
+<aside>
+
+
+</aside>
   </div>
 </template>
 
 <script>
 
-// import Dashboard from "../components/dashboard"
+
+
 export default {
-  name: 'HelloWorld',
-  components: {
-    // Dashboard
-  },
-  props: {
-    msg: String
-  },
-  data() {
-    return {
-      showMenu: false
-    }
-  },
-  methods: {
-    toggleNavbar: function(){
-      this.showMenu = !this.showMenu;
-    }
-  }
+  name: 'Decide',
+  
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.bg{
-  background-color: rgba(172, 185, 211, 0.5);
-  color: #034C81;
-}
+<style>
 .nav-item button{
     background-color: rgb(31, 59, 153);
     box-shadow: rgba(95, 94, 94, 0.2) 0.01rem 0.05rem 0.01rem 0.05rem;
@@ -92,5 +44,4 @@ export default {
     border-radius: 1rem;
     border: none;
 }
-
 </style>

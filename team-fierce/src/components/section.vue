@@ -217,8 +217,10 @@
                             </div>
                             <div class="text-left py-4 self-center">
                                 <h3 class="md:text-2xl py-2 text-blue-900">A perfect medical App with the perfect medical Team</h3>
-                                <p class="text-xs md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veritatis dolor ut eaque non ratione officia error saepe accusantium nesciunt velit doloremque facilis voluptates fuga explicabo repellendus, adipisci suscipit in?</p><br>
-                                <p class="text-xs md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vero rerum error reiciendis id quidem optio et numquam voluptatem, facere quo quia provident non fugit dolore dolorem aliquid eaque sapiente.
+                                <p class="text-xs md:text-lg">No more time wasted in the hospital to book an appointment with the doctor. You can view a doctor's 
+                                    calender, propose a meeting and get the best medical advice.</p><br>
+                                <p class="text-xs md:text-lg">Communicate your symptoms seamlessly,
+                                    Get your state emergency and pickup lines at your fingertips and many more.
                                 </p>
                             </div>
                           </div>
@@ -296,17 +298,18 @@
                <div class="container mx-auto">
             <div class="">
                 <h3 class="text-2xl text-blue-900 font-bold">User's Review</h3>
-                <p class="text-lg py-3">Lorem ipsum dolor sit amet consecteius repellat praesentium magni id sit libero quas</p>
+                <p class="text-black text-lg py-3">Get to hear from our amazing users</p>
                 
             </div>
             
-                <div class="section-3 my-5">
+                <div class="section-3 my-5 relative">
                   <div class="justify-self-center m-4 shadow-lg card-body bg-white rounded-lg active ">
                         <div class="">
                               <div class="text-center">
                                   <img class="w-24 py-3 rounded-full mx-auto" src="../assets/images/an-african-american-student.png" alt="">
-                                  <h6 class="py-3 text-lg card-subtitle mb-2">Bolade Ayoade</h6>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h6 class="py-3 text-lg card-subtitle mb-2 font-bold">Bolade Ayoade</h6>
+                                  <p class="card-text">AreaDoctor is just perfect, got medical attention in no time. 
+                                      I highly recommend the App</p>
                               </div>
                              
                               
@@ -316,8 +319,8 @@
                         <div class="">
                                 <div class="text-center">
                                         <img class="w-24 py-3 rounded-full mx-auto" src="../assets/images/girl.png" alt="">
-                                        <h6 class="pt-3 card-subtitle mb-2">Gbemisola Adesina</h6>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <h6 class="pt-3 card-subtitle mb-2 font-bold">Gbemisola Adesina</h6>
+                                        <p class="card-text pb-4">After conflicting results on google a friend referred AreaDoctor to me and what I thought was a serious medical issue was just a mild headache.</p>
                                     </div>
                           
                         </div>
@@ -326,8 +329,9 @@
                         <div class="">
                                     <div class="text-center">
                                             <img class="w-24 py-3 rounded-full mx-auto" src="../assets/images/girl2.png" alt="">
-                                            <h6 class="pt-3 card-subtitle mb-2">Ngozi Eze</h6>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <h6 class="pt-3 card-subtitle mb-2 font-bold">Ngozi Eze</h6>
+                                            <p class="card-text pb-3">I was looking to contact an ambulance service and I got a list of various state emergency and pickup lines on AreaDoctor
+                                                I saved a life on that day.</p>
                                     </div>
                               
                         </div>
@@ -345,7 +349,7 @@
            
     </div>
 </template>
-
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script>
 import HelloWorld from '../components/HelloWorld'
 export default {
