@@ -81,7 +81,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .bg{
-  background-color: rgba(172, 185, 211, 0.5);
+  background-color: rgba(172, 185, 211, 0.8);
   color: #034C81;
 }
 .nav-item button{
