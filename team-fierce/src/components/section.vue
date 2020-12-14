@@ -1,6 +1,6 @@
 <template>
     <div class="section">
-    <HelloWorld class="fixed w-full"/>
+    <!-- <HelloWorld class="fixed w-full"/> -->
     <header class="pt-9">
         <div class="container pt-9 mx-auto px-4">
         <div class="grid grid-cols-2 justify-center">
@@ -338,7 +338,7 @@
                   </div>
                 </div> 
                </div>
-                <div class="text-center pt-3 relative">
+                <div class="text-center pt-3 relative flex justify-center mx-auto">
                         <button class="bg-white p-3 rounded mx-3"><i class="fab fa-google-play"></i> Download on <br> app on Play Store</button>
                         <button class="bg-white p-3 rounded-lg mx-3"><i class="fab fa-apple"></i> Download on app <br> on Apple Store</button>
                 </div>
@@ -351,11 +351,11 @@
 </template>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script>
-import HelloWorld from '../components/HelloWorld'
+// import HelloWorld from '../components/HelloWorld'
 export default {
   name: 'section',
   components: {
-     HelloWorld
+    //  HelloWorld
   },
   props: {
     msg: String,
@@ -391,7 +391,7 @@ export default {
 }
 .section-3{
     display: grid;
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
     grid-template-columns:1fr 1fr 1fr;
     overflow-x:scroll;
     cursor:pointer;
