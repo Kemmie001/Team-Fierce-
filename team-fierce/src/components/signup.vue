@@ -79,8 +79,8 @@
                       </svg>                    
                 </aside>
                 <aside class="col-md-6 ml-5">
-                  <h1 class="text-xl heading">Create Your Account</h1>
-                  <p class="text-center py-4 font-bold">Connect with healthcare professionals at the comfort of your home</p>
+                  <h1 class="text-2xl  heading">Create Your Account</h1>
+                  <p class="text-center py-4 ">Connect with healthcare professionals at the comfort of your home</p>
                   <form action="" class="text-left sign-form">
                       <label for="first-name">First Name</label>
                     <input class="sign-input" type="text" name="first-name" id="first-name">
@@ -94,11 +94,13 @@
                       <span><input type="checkbox" name="remember-me" id=""> Remember me</span>
                       <span><a class="text-red-500" href="#">Forgot Password?</a><br></span>
                       </div>
-                      <input type="button" class="sign-button" value="Sign Up As a Doctor">
+                      <button class="sign-button" type="submit">
+                          <router-link to="/dashboard">Sign Up As Doctor</router-link>
+                      </button>
                       <span class="pb-4 mx-auto text-center block">OR</span>
                       <input type="button" class="sign-button" value="Sign Up As a Patient">
                   </form>
-                  <p class="text-center font-bold">Have an account? 
+                  <p class="font-bold pb-7">Have an account? 
                       <router-link to="/login" class="text-blue-300">Login In</router-link>
                       </p>
                 </aside>
@@ -144,14 +146,14 @@ export default {
     display: block;
     margin-bottom: 0.5rem;
     color: #034C81;
-    font-weight: 700;
+    font-weight: 600;
 }
 .sign-input{
     margin-bottom: 0.5rem;
-    outline-color: transparent;
+    outline-color:#034C81;
     display: block;
     width: 80%;
-    border: solid #034C81 2px;
+    border: solid #034C81 1px;
     border-radius: 0.5rem;
     padding: 0.5rem;
 }

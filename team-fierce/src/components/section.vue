@@ -1,12 +1,13 @@
 <template>
     <div class="section">
-    <HelloWorld class="fixed w-full"/>
-    <header class="pt-9">
+    <HelloWorld class="fixed  w-full"/>
+    
+    <header class="pt-9 ">
         <div class="container pt-9 mx-auto px-4">
-        <div class="grid grid-cols-2 justify-center">
+        <div class="grid md:grid-cols-2 justify-center">
             <div class=" text-left px-5 self-center justify-self-center">
-                <h3 class="text-xl md:text-2xl text-blue-900">Let's Connect You To The Perfect Medical Practioner Online.</h3>
-                <p class="md:text-xl text-black-300">We connect healthcare professionals to patients for healthy life.</p>
+                <h3 class="text-md py-2 text-2xl text-blue-900">Let's Connect You To The Perfect Medical Practioner Online.</h3>
+                <p class="text-xl text-black-300 pb-3">We connect healthcare professionals to patients for healthy life.</p>
         </div>
         <div class="col-6">
         <svg width="100%" height="100%" viewBox="0 0 820 672" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -203,7 +204,7 @@
       </header>
        <section class="bg">
                <article class="container mx-auto">
-                    <div class="grid grid-cols-2 justify-content-center py-2 gap-4">
+                    <div class="grid md:grid-cols-2 justify-content-center py-2 gap-4">
                             <div class="self-center">
                                     <svg width="100%" height="" viewBox="0 0 526 401" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect width="526" height="401" fill="url(#pattern0)"/>
@@ -215,7 +216,7 @@
                                         </defs>
                                         </svg>                                                                        
                             </div>
-                            <div class="text-left py-4 self-center">
+                            <div class="text-left py-4 px-3 self-center">
                                 <h3 class="md:text-2xl py-2 text-blue-900">A perfect medical App with the perfect medical Team</h3>
                                 <p class="text-xs md:text-lg">No more time wasted in the hospital to book an appointment with the doctor. You can view a doctor's 
                                     calender, propose a meeting and get the best medical advice.</p><br>
@@ -295,14 +296,14 @@
                       <!-- <img src=""> -->
           </section>
           <section class="bg pt-4">
-               <div class="container mx-auto">
+               <div class="container  mx-auto">
             <div class="">
                 <h3 class="text-2xl text-blue-900 font-bold">User's Review</h3>
-                <p class="text-black text-lg py-3">Get to hear from our amazing users</p>
+                <p class="text-black text-lg py-1">Get to hear from our amazing users</p>
                 
             </div>
             
-                <div class="section-3 my-5 relative">
+                <div class="section-3  my-2">
                   <div class="justify-self-center m-4 shadow-lg card-body bg-white rounded-lg active ">
                         <div class="">
                               <div class="text-center">
@@ -316,17 +317,17 @@
                         </div>                            
                   </div>
                   <div class="card-body bg-white m-4 justify-self-center  rounded-lg">
-                        <div class="">
+                        <div class="p-2">
                                 <div class="text-center">
-                                        <img class="w-24 py-3 rounded-full mx-auto" src="../assets/images/girl.png" alt="">
-                                        <h6 class="pt-3 card-subtitle mb-2 font-bold">Gbemisola Adesina</h6>
+                                        <img class="w-24 py-2 rounded-full mx-auto" src="../assets/images/girl.png" alt="">
+                                        <h6 class="pt-2 card-subtitle mb-2 font-bold">Gbemisola Adesina</h6>
                                         <p class="card-text pb-4">After conflicting results on google a friend referred AreaDoctor to me and what I thought was a serious medical issue was just a mild headache.</p>
                                     </div>
                           
                         </div>
                   </div>
                   <div class="bg-white m-4 card-body justify-self-center  rounded-lg">
-                        <div class="">
+                        <div class="p-2">
                                     <div class="text-center">
                                             <img class="w-24 py-3 rounded-full mx-auto" src="../assets/images/girl2.png" alt="">
                                             <h6 class="pt-3 card-subtitle mb-2 font-bold">Ngozi Eze</h6>
@@ -339,12 +340,12 @@
                 </div> 
                </div>
                 <div class="text-center pt-3 relative flex justify-center mx-auto">
-                        <button class="bg-white p-3 rounded mx-3"><i class="fab fa-google-play"></i> Download on <br> app on Play Store</button>
-                        <button class="bg-white p-3 rounded-lg mx-3"><i class="fab fa-apple"></i> Download on app <br> on Apple Store</button>
+                        <button class="bg-white  rounded mx-3"><i class="fab fa-google-play"></i> Download on <br> app on Play Store</button>
+                        <button class="bg-white rounded-lg mx-3"><i class="fab fa-apple"></i> Download on app <br> on Apple Store</button>
                 </div>
                 <svg class="wave" width="100%" height="20%" viewBox="0 0 1440 360" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M-58 360L-39.0375 312C-18.8108 264 20.3783 168 58.3033 156C97.4925 144 136.682 216 175.871 222C213.796 228 252.985 168 292.174 180C331.363 192 369.288 276 408.478 294C447.667 312 486.856 264 526.045 258C563.97 252 603.159 288 642.348 252C681.538 216 719.463 108 758.652 60C797.841 12 837.03 24 874.955 60C914.144 96 953.333 156 992.523 162C1031.71 168 1069.64 120 1108.83 120C1148.02 120 1187.2 168 1225.13 204C1264.32 240 1303.51 264 1342.7 228C1380.62 192 1419.81 96 1440.04 48L1459 0V360H1440.04C1419.81 360 1380.62 360 1342.7 360C1303.51 360 1264.32 360 1225.13 360C1187.2 360 1148.02 360 1108.83 360C1069.64 360 1031.71 360 992.523 360C953.333 360 914.144 360 874.955 360C837.03 360 797.841 360 758.652 360C719.463 360 681.538 360 642.348 360C603.159 360 563.97 360 526.045 360C486.856 360 447.667 360 408.478 360C369.288 360 331.363 360 292.174 360C252.985 360 213.796 360 175.871 360C136.682 360 97.4925 360 58.3033 360C20.3783 360 -18.8108 360 -39.0375 360H-58Z" fill="#034C81"/>
-                    </svg>                    
+                </svg>                    
            </section>
            
     </div>
@@ -352,10 +353,12 @@
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script>
 import HelloWorld from '../components/HelloWorld'
+import Dashboard from '../components/dashboard'
 export default {
   name: 'section',
   components: {
-     HelloWorld
+     HelloWorld,
+     Dashboard
   },
   props: {
     msg: String,
@@ -379,7 +382,7 @@ export default {
 </script>
 
 // <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
 .helloWorld{
     position: fixed;
 }
@@ -412,8 +415,11 @@ export default {
     width: 2px;
 }
 .card-body{
-    position: relative;
-    min-width: 300px;
+    min-width: 250px;
+}
+.text-center button{
+    border: black 1px solid;
+    padding: 0.3rem;
 }
 @media screen and (min-width: 768px) {
     .wave{
@@ -426,6 +432,7 @@ svg{
     width: 15rem;
 }
 .card-body{
+    padding: 1rem;
     width: 18rem;
 }
 }

@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
 <!-- This example requires Tailwind CSS v2.0+ -->
-<!-- <Dashboard/> -->
   <nav class="fixed-top flex flex-wrap items-center justify-between px-2 py-1 navbar-expand-lg bg mb-3">
     <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
       <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -81,7 +80,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .bg{
-  background-color: rgba(172, 185, 211, 0.8);
+  background-color: rgba(172, 185, 211, 0.9);
   color: #034C81;
 }
 .nav-item button{
@@ -92,5 +91,7 @@ export default {
     border-radius: 1rem;
     border: none;
 }
-
+nav{
+  box-shadow: 0 3px 5px #ccc;
+}
 </style>

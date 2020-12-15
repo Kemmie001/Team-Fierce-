@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <HelloWorld/> -->
+    <!-- <Dashboard/> -->
     <!-- <Section/> -->
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -10,14 +10,14 @@
   </div>
 </template>
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
+// import Dashboard from './components/dashboard.vue'
 // import  Section from './components/section.vue'
 
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
+    // Dashboard,
     // Section
   }
 }

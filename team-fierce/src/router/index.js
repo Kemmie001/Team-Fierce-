@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Login from '../components/login'
 import Signup from '../components/signup'
 import Section from '../components/section'
+import Dashboard from '../components/dashboard'
 
 Vue.use(VueRouter)
 
@@ -18,6 +19,11 @@ const routes = [
     component: Section
   },
   {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard
+  },
+  {
     path: '/login',
     name: 'Login',
     component: Login
@@ -27,6 +33,11 @@ const routes = [
     name: 'Signup',
     component: Signup
   },
+  {
+    path: 'dashboard',
+    name: 'Dashboard',
+    component: Dashboard
+  }
   
   // {
   //   // route level code-splitting

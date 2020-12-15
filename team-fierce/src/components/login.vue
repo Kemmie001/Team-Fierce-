@@ -79,20 +79,23 @@
                       </svg>                    
                 </aside>
                 <aside class="col-md-6 ml-5">
-                  <h1 class="text-xl heading">Welcome Back!</h1>
-                  <p class="text-center py-4 font-bold">Connect with healthcare professionals.</p>
+                  <h1 class="text-2xl heading">Welcome Back!</h1>
+                  <p class="text-center py-3">Connect with healthcare professionals.</p>
                   <form action="" class="text-left sign-form">
                       <label for="email">Email</label>
-                      <input class="sign-input" type="email" name="email" id="email"><br>
+                      <input class="sign-input" type="email" name="email" id="email">
                       <label for="password">Password</label>
-                      <input class="sign-input" type="password" name="password" id="password"><br>
-                      <div class="asset mt-3 mb-4 font-bold">
+                      <input class="sign-input" type="password" name="password" id="password">
+                      <div class="asset mt-6 mb-4 font-bold">
                         <span><input type="checkbox" name="remember-me" id=""> Remember me</span>
-                        <span><a class="text-red-500" href="#">Forgot Password?</a><br></span>
+                        <span> <a class="text-red-500 ml-auto" href="#"> Forgot Password?</a><br></span>
                       </div>
-                      <input type="button" class="sign-button" value="Login">
+                      <button type="submit" class="sign-button">
+                          <router-link to="/Dashboard">Login</router-link>
+                      </button>
+                      <!-- <input type="button" class="sign-button" value="Login"> -->
                   </form>
-                  <p class="text-center font-bold">Don't have an account? <router-link to="/signup" class="text-blue-500">Sign Up</router-link></p>
+                  <p class="font-bold pb-3">Don't have an account? <router-link to="/signup" class="text-blue-500">Sign Up</router-link></p>
                 </aside>
             </div>
         </section>
@@ -136,14 +139,14 @@ export default {
     display: block;
     margin-bottom: 0.5rem;
     color: #034C81;
-    font-weight: 700;
+    font-weight: 600;
 }
 .sign-input{
-    margin-bottom: 1rem;
-    outline-color: transparent;
+    margin-bottom: 0.5rem;
+    outline-color: #034C81;
     display: block;
     width: 80%;
-    border: solid #034C81 2px;
+    border: solid #034C81 1px;
     border-radius: 0.5rem;
     padding: 0.5rem;
 }
