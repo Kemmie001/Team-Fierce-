@@ -342,7 +342,6 @@ h4{
 }
 .search:focus{
   border-radius: 1rem;
- 
 }
 .side-icon{
   overflow-x: scroll;
