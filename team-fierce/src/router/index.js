@@ -4,6 +4,8 @@ import Login from '../components/login'
 import Signup from '../components/signup'
 import Section from '../components/section'
 import Dashboard from '../components/dashboard'
+import Search from '../components/search'
+import Ask from '../components/ask'
 
 Vue.use(VueRouter)
 
@@ -22,6 +24,16 @@ const routes = [
     path: '/dashboard',
     name: 'Dashboard',
     component: Dashboard
+  },
+  {
+    path: '/search',
+    name: 'Search',
+    component: Search
+  },
+  {
+    path: '/ask',
+    name: 'Ask',
+    component: Ask
   },
   {
     path: '/login',

@@ -95,10 +95,12 @@
                       <span><a class="text-red-500" href="#">Forgot Password?</a><br></span>
                       </div>
                       <button class="sign-button" type="submit">
-                          <router-link to="/dashboard">Sign Up As Doctor</router-link>
+                          <router-link to="/dashboard">Sign Up As A Doctor</router-link>
                       </button>
                       <span class="pb-4 mx-auto text-center block">OR</span>
-                      <input type="button" class="sign-button" value="Sign Up As a Patient">
+                       <button class="sign-button" type="submit">
+                          <router-link to="/dashboard">Sign Up As A Patient</router-link>
+                      </button>
                   </form>
                   <p class="font-bold pb-7">Have an account? 
                       <router-link to="/login" class="text-blue-300">Login In</router-link>

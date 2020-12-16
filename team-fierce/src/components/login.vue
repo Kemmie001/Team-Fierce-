@@ -92,9 +92,7 @@
                       </div>
                       <button type="submit" class="sign-button">
                           <router-link to="/Dashboard">Login</router-link>
-                      </button>
-                      <!-- <input type="button" class="sign-button" value="Login"> -->
-                  </form>
+                      </button>                  </form>
                   <p class="font-bold pb-3">Don't have an account? <router-link to="/signup" class="text-blue-500">Sign Up</router-link></p>
                 </aside>
             </div>
