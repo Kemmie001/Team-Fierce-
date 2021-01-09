@@ -5,7 +5,7 @@
         <section class="container mx-auto pt-9">
             <div class="grid md:grid-cols-2 align-center mt-5 md:mt-9">
                 <aside class="">
-                  <svg width="100%" height="" viewBox="0 0 677 508" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="100%" height="100%" viewBox="0 0 677 508" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0)">
                       <path d="M162.48 108.797C162.48 108.797 90.3288 118.957 85.1328 200L134.977 211.853L162.48 108.797Z" fill="#034C81"/>
                       <path opacity="0.46" d="M162.48 108.797C162.48 108.797 90.3288 118.957 85.1328 200L134.977 211.853L162.48 108.797Z" fill="white"/>
@@ -81,30 +81,29 @@
                 <aside class="col-md-6 ml-5">
                   <h1 class="text-2xl  heading">Create Your Account</h1>
                   <p class="text-center py-4 ">Connect with healthcare professionals at the comfort of your home</p>
-                  <form action="" class="text-left sign-form">
+                  <form class="text-left sign-form" @submit="onSubmitData">
                       <label for="first-name">First Name</label>
-                    <input class="sign-input" type="text" name="first-name" id="first-name">
+                    <input class="sign-input" type="text" name="first-name" id="first-name" v-model="firstname">
                     <label for="last-name">Last Name</label>
-                    <input type="text" class="sign-input" name="last-name" id="last-name">
+                    <input type="text" class="sign-input" name="last-name" id="last-name" v-model="lastname">
                       <label for="email">Email</label>
-                      <input class="sign-input" type="email" name="email" id="email">
+                      <input class="sign-input" type="email" name="email" id="email" v-model="email">
                       <label for="password">Password</label>
-                      <input class="sign-input" type="password" name="password" id="password">
-                      <div class="asset mb-4 font-bold">
+                      <input class="sign-input" type="password" name="password" id="password" v-model="password">
+                      <div class="asset mb-4 mt-4 font-bold">
                       <span><input type="checkbox" name="remember-me" id=""> Remember me</span>
-                      <span><a class="text-red-500" href="#">Forgot Password?</a><br></span>
                       </div>
                       <button class="sign-button" type="submit">
-                          <router-link to="/dashboard">Sign Up As A Doctor</router-link>
+                         Sign Up As A Doctor
                       </button>
                       <span class="pb-4 mx-auto text-center block">OR</span>
-                       <button class="sign-button" type="submit">
+                       <!-- <button class="sign-button" type="submit">
                           <router-link to="/dashboard">Sign Up As A Patient</router-link>
-                      </button>
+                      </button> -->
                   </form>
                   <p class="font-bold pb-7">Have an account? 
                       <router-link to="/login" class="text-blue-300">Login In</router-link>
-                      </p>
+                  </p>
                 </aside>
             </div>
         </section>
@@ -112,6 +111,7 @@
 </div>
 </template>
 <script>
+import axios from "axios"
 import HelloWorld from '../components/HelloWorld' 
 export default {
     name: 'Signup',
@@ -120,7 +120,25 @@ export default {
     },
     data (){
         return{
-           
+           firstname: " ",
+           lastname: " ",
+           email: " ",
+           password: ""
+        }
+    },
+    methods:{
+        onSubmitData(){
+            axios.post(
+                'https://area-doctor.herokuapp.com/api/doctors/registe', 
+                {
+                    firstname: this.firstname,
+                    lastname: this.lastname,
+                    email: this.email,
+                    password: this.password
+                }.then((response) =>{
+                    console.log(response)
+                })
+            )
         }
     }
 }

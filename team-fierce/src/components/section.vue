@@ -303,8 +303,8 @@
                 
             </div>
             
-                <div class="section-3  my-2">
-                  <div class="justify-self-center m-4 shadow-lg card-body bg-white rounded-lg active ">
+                <!-- <div class="section-3  my-2"> -->
+                  <!-- <div class="justify-self-center m-4 shadow-lg card-body bg-white rounded-lg active ">
                         <div class="">
                               <div class="text-center">
                                   <img class="w-24 py-3 rounded-full mx-auto" src="../assets/images/an-african-american-student.png" alt="">
@@ -315,8 +315,8 @@
                              
                               
                         </div>                            
-                  </div>
-                  <div class="card-body bg-white m-4 justify-self-center  rounded-lg">
+                  </div> -->
+                  <!-- <div class="card-body bg-white m-4 justify-self-center  rounded-lg">
                         <div class="p-2">
                                 <div class="text-center">
                                         <img class="w-24 py-2 rounded-full mx-auto" src="../assets/images/girl.png" alt="">
@@ -325,8 +325,8 @@
                                     </div>
                           
                         </div>
-                  </div>
-                  <div class="bg-white m-4 card-body justify-self-center  rounded-lg">
+                  </div> -->
+                  <!-- <div class="bg-white m-4 card-body justify-self-center  rounded-lg">
                         <div class="p-2">
                                     <div class="text-center">
                                             <img class="w-24 py-3 rounded-full mx-auto" src="../assets/images/girl2.png" alt="">
@@ -336,8 +336,9 @@
                                     </div>
                               
                         </div>
-                  </div>
-                </div> 
+                  </div> -->
+                  <Cardlist/>
+                <!-- </div>  -->
                </div>
                 <div class="text-center pt-3 relative flex justify-center mx-auto">
                         <button class="bg-white  rounded mx-3"><i class="fab fa-google-play"></i> Download on <br> app on Play Store</button>
@@ -354,11 +355,13 @@
 <script>
 import HelloWorld from '../components/HelloWorld'
 import Dashboard from '../components/dashboard'
+import Cardlist from '../components/cardlist'
 export default {
   name: 'section',
   components: {
      HelloWorld,
-     Dashboard
+     Dashboard,
+     Cardlist
   },
   props: {
     msg: String,
@@ -368,7 +371,7 @@ export default {
   data() {
     return {
       showMenu: false,
-      
+      fetchedData:[]
     }
      
   },
@@ -377,6 +380,13 @@ export default {
     toggleNavbar: function(){
       this.showMenu = !this.showMenu;
     },
+    getTestimonials(){
+        fetch("testimonials/featured")
+        .then(response => response.json())
+        .then(data =>{
+            this.testimonials = data;
+        })
+    }
 }
 }
 </script>

@@ -6,6 +6,7 @@ import Section from '../components/section'
 import Dashboard from '../components/dashboard'
 import Search from '../components/search'
 import Ask from '../components/ask'
+import Intern from '../components/Intern'
 
 Vue.use(VueRouter)
 
@@ -45,12 +46,12 @@ const routes = [
     name: 'Signup',
     component: Signup
   },
+
   {
-    path: 'dashboard',
-    name: 'Dashboard',
-    component: Dashboard
+    path: '/intern',
+    name: 'Intern',
+    component: Intern
   }
-  
   // {
   //   // route level code-splitting
   //   // this generates a separate chunk (about.[hash].js) for this route

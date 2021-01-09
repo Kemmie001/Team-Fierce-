@@ -1,56 +1,28 @@
 <template>
-    <transition :name="dir">
-        <div v-show="visible">
-            <!-- <img src="../assets/images/an-african-american-student.png" alt=""> -->
-            <slot></slot>
+    <div>
+        <div class="card-body bg-white m-4 justify-self-center  rounded-lg">
+        <div class="p-2">
+            <div class="text-center">
+                    <img class="w-24 py-2 rounded-full mx-auto" :src="card.users.image" alt="">
+                    <h6 class="pt-2 card-subtitle mb-2 font-bold">{{card.users.name}}</h6>
+                    <p class="card-text pb-4">{{card.body}}</p>
+                </div>
         </div>
-    </transition>
+    </div>
+    </div>
 </template>
 <script>
 export default {
     data(){
         return{
-            index: 0,
+            
         }
     },
-    computed:{
-        visible(){
-            return this.index === this.$parent.index;
-        },
-        dir(){
-            console.log(this.$parent.slideDirection)
-            return this.$parent.slideDirection;
-        },
-    }
+    props:["card"]
 }
 </script>
 <style scoped>
-    .slide-left-enter-active{
-        animation: slide-left-in 0.5s ease-in;
-    }
-    .slide-left-leave-active{
-        animation: slide-left-out 0.5s ease-in;
-    }
-    @keyframes slide-left-in {
-        from{transform: translateX(-100%);}
-        to{transform: translateX(0);}
-    }
-    @keyframes slide-left-out {
-        from{transform: translateX(0%);}
-        to{transform: translateX(100%);}
-    }
-    .slide-right-enter-active{
-        animation: slide-right-in 0.5s ease-in;
-    }
-     .slide-right-leave-active{
-        animation: slide-right-out 0.5s ease-in;
-    }
-     @keyframes slide-right-out {
-        from{transform: translateX(0%);}
-        to{transform: translateX(-100%);}
-    }
-     @keyframes slide-right-in {
-        from{transform: translateX(100%);}
-        to{transform: translateX(0);}
+   .card-body{
+    min-width: 250px;
     }
 </style>

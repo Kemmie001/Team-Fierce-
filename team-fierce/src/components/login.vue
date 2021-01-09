@@ -5,7 +5,7 @@
         <section class="container pt-9 mx-auto md:pt-9">
             <div class="grid md:grid-cols-2 mt-5 md:mt-9">
                 <aside class="col-md-6">
-                  <svg width="100%" height="" viewBox="0 0 677 508" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="100%" height="100%" viewBox="0 0 677 508" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0)">
                       <path d="M162.48 108.797C162.48 108.797 90.3288 118.957 85.1328 200L134.977 211.853L162.48 108.797Z" fill="#034C81"/>
                       <path opacity="0.46" d="M162.48 108.797C162.48 108.797 90.3288 118.957 85.1328 200L134.977 211.853L162.48 108.797Z" fill="white"/>
@@ -81,18 +81,19 @@
                 <aside class="col-md-6 ml-5">
                   <h1 class="text-2xl heading">Welcome Back!</h1>
                   <p class="text-center py-3">Connect with healthcare professionals.</p>
-                  <form action="" class="text-left sign-form">
+                  <form @submit.prevent="submit" class="text-left sign-form">
                       <label for="email">Email</label>
-                      <input class="sign-input" type="email" name="email" id="email">
+                      <input class="sign-input" type="email" name="email" id="email" v-model="form.email">
                       <label for="password">Password</label>
-                      <input class="sign-input" type="password" name="password" id="password">
+                      <input class="sign-input" type="password" name="password" id="password" v-model="form.password">
                       <div class="asset mt-6 mb-4 font-bold">
                         <span><input type="checkbox" name="remember-me" id=""> Remember me</span>
                         <span> <a class="text-red-500 ml-auto" href="#"> Forgot Password?</a><br></span>
                       </div>
                       <button type="submit" class="sign-button">
-                          <router-link to="/Dashboard">Login</router-link>
-                      </button>                  </form>
+                        <router-link to="/dashboard">Login</router-link>
+                      </button>                 
+                    </form>
                   <p class="font-bold pb-3">Don't have an account? <router-link to="/signup" class="text-blue-500">Sign Up</router-link></p>
                 </aside>
             </div>
@@ -102,6 +103,7 @@
 </template>
 <script>
 import HelloWorld from '../components/HelloWorld'
+import { mapActions } from 'vuex'
 export default {
     name: 'Login',
     components:{
@@ -109,8 +111,19 @@ export default {
     },
     data (){
         return{
-           
+           form:{
+               email: " ",
+               password: "",
+           }
         }
+    },
+    methods: {
+        ...mapActions({
+            logIn: 'auth/logIn'
+        }),
+             submit (){
+                this.logIn(this.form)
+            }
     }
 }
    
