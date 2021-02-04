@@ -78,9 +78,9 @@
                       </defs>
                       </svg>                    
                 </aside>
-                <aside class="col-md-6 ml-5">
-                  <h1 class="text-2xl  heading">Create Your Account</h1>
-                  <p class="text-center py-4 ">Connect with healthcare professionals at the comfort of your home</p>
+                <aside class="col-md-6 ml-5 mt-4">
+                  <h1 class="text-2xl text-left heading">Create Your Account</h1>
+                  <p class="text-left pb-4">Connect with healthcare professionals at the comfort of your home</p>
                   <form class="text-left sign-form" @submit="onSubmitData">
                       <label for="first-name">First Name</label>
                     <input class="sign-input" type="text" name="first-name" id="first-name" v-model="firstname">
@@ -93,18 +93,20 @@
                       <div class="asset mb-4 mt-4 font-bold">
                       <span><input type="checkbox" name="remember-me" id=""> Remember me</span>
                       </div>
-                      <button class="sign-button" type="submit">
-                         Sign Up As A Doctor
-                      </button>
+                      <button type="submit" class="sign-button">
+                        <router-link  to="/dashboard">Sign up as a doctor</router-link>
+                      </button> 
                       <span class="pb-4 mx-auto text-center block">OR</span>
-                       <!-- <button class="sign-button" type="submit">
+                       <button class="sign-button" type="submit">
                           <router-link to="/dashboard">Sign Up As A Patient</router-link>
-                      </button> -->
-                  </form>
-                  <p class="font-bold pb-7">Have an account? 
-                      <router-link to="/login" class="text-blue-300">Login In</router-link>
+                      </button>
+                      <p class="font-bold pb-7 ml-auto">Have an account? 
+                      <router-link to="/login" class="text-blue-500"> Login In</router-link>
                   </p>
+                  </form>
+                   
                 </aside>
+               
             </div>
         </section>
      </main>
@@ -129,7 +131,7 @@ export default {
     methods:{
         onSubmitData(){
             axios.post(
-                'https://area-doctor.herokuapp.com/api/doctors/registe', 
+                'https://area-doctor.herokuapp.com/api/doctors/register', 
                 {
                     firstname: this.firstname,
                     lastname: this.lastname,
@@ -156,7 +158,7 @@ export default {
     background-color: #034C81;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    width: 90%;
+    width: 80%;
     border: none;
     color: #ffffff;
     font-weight: 700;
@@ -181,7 +183,7 @@ export default {
     color: #034C81;
 }
 .asset{
-    width: 90%;
+    width: 70%;
     color: #034C81;
     display: flex;
     justify-content: space-between;

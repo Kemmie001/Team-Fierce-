@@ -91,7 +91,7 @@
                         <span> <a class="text-red-500 ml-auto" href="#"> Forgot Password?</a><br></span>
                       </div>
                       <button type="submit" class="sign-button">
-                        <router-link to="/dashboard">Login</router-link>
+                        <router-link  to="/dashboard">Login</router-link>
                       </button>                 
                     </form>
                   <p class="font-bold pb-3">Don't have an account? <router-link to="/signup" class="text-blue-500">Sign Up</router-link></p>
@@ -140,7 +140,7 @@ export default {
     background-color: #034C81;
     padding: 0.5rem;
     margin-bottom: 2rem;
-    width: 90%;
+    width: 80%;
     border: none;
     color: #ffffff;
     font-weight: 700;
@@ -165,7 +165,7 @@ export default {
     color: #034C81;
 }
 .asset{
-    width: 90%;
+    width: 80%;
     color: #034C81;
     display: flex;
     justify-content: space-between;
